@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "../styles/Links.module.css";
 
-export const Links = () => {
+export const SocialLinks = () => {
   return (
     <div className={styles.links}>
       <ul>

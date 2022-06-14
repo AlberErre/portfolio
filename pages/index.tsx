@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Script from "next/script";
+import { SocialLinks } from "../components/SocialLinks";
 
 const Home: NextPage = () => {
   return (
@@ -15,35 +17,32 @@ const Home: NextPage = () => {
       <Script src="/p5/art.js"></Script>
 
       <main className={styles.main}>
-        <div id="canvasHolder" style={{ marginBottom: "16px" }}></div>
+        <div id="canvasHolder" />
 
         <h1 className={styles.title}>Alberto Ruiz</h1>
-        <h2>Software Engineer</h2>
+
+        <div className={styles.description}>
+          <p>Hey! 👋🏼 I'm Alber</p>
+          <p>
+            Software engineer specialized in Frontend development (web + mobile)
+            who enjoys building scalable applications with strong UX design.
+          </p>
+          <p>I'm also very interested on Rust programming 🦀.</p>
+          <p>
+            I love to work with the <strong>React</strong> ecosystem ⚛️.
+          </p>
+        </div>
 
         <a
-          className="socialIcon"
-          href="https://twitter.com/0xErre"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/twitter.png" alt="AlberErre-twitter" height="25" />
-        </a>
-        <a
-          className="socialIcon"
+          className={styles.portfolio}
           href="https://github.com/AlberErre"
           target="_blank"
           rel="noreferrer"
         >
-          <img src="/github.png" alt="AlberErre-github" height="25" />
+          Portfolio
         </a>
-        <a
-          className="socialIcon"
-          href="https://github.com/AlberErre"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src="/linkedin.png" alt="AlberErre-linkeding" height="25" />
-        </a>
+
+        <SocialLinks />
       </main>
     </div>
   );
