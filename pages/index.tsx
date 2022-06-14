@@ -1,44 +1,32 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Script from "next/script";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Alberto Ruiz</title>
         <link rel="icon" href="/favicon.ico" />
-        <script src="./js/p5.min.js"></script>
-        <script src="./js/randomArt.js"></script>
       </Head>
+      <Script src="/p5/p5.min.js"></Script>
+      <Script src="/p5/art.js"></Script>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Alber (Erre) Ruiz</h1>
-        <h2>Alber (Erre) Ruiz</h2>
+        <div id="canvasHolder" style={{ marginBottom: "16px" }}></div>
 
-        <body>
-          <div className="mainWrapper">
-            <div className="home homeContainer fadeAnimation">
-              <div id="canvasHolder" style="margin-bottom: 16px"></div>
-              <h1>Alber Erre</h1>
-            </div>
-          </div>
-        </body>
-      </main>
+        <h1 className={styles.title}>Alberto Ruiz</h1>
+        <h2>Software Engineer</h2>
 
-      <footer className={styles.footer}>
         <a
           className="socialIcon"
           href="https://twitter.com/0xErre"
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src="./images/social/twitter.png"
-            alt="AlberErre-twitter"
-            height="25"
-          />
+          <img src="/twitter.png" alt="AlberErre-twitter" height="25" />
         </a>
         <a
           className="socialIcon"
@@ -46,13 +34,17 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <img
-            src="./images/social/github.png"
-            alt="AlberErre-github"
-            height="25"
-          />
+          <img src="/github.png" alt="AlberErre-github" height="25" />
         </a>
-      </footer>
+        <a
+          className="socialIcon"
+          href="https://github.com/AlberErre"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src="/linkedin.png" alt="AlberErre-linkeding" height="25" />
+        </a>
+      </main>
     </div>
   );
 };
