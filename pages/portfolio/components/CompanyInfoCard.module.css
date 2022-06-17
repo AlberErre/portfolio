@@ -1,0 +1,19 @@
+.image {
+  padding: 14px;
+  height: 80px;
+  width: fit-content;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.card p strong {
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.card {
+  width: 600px !important;
+  padding: 32px !important;
+}

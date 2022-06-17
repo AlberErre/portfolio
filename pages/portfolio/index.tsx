@@ -13,10 +13,10 @@ const Home: NextPage = () => {
         <title>Alberto Ruiz: Portfolio</title>
       </Head>
 
+      <FloatingBackButton cta="Home" to="/" />
+
       <main className={styles.main}>
         <h1 className={styles.title}>Projects I've been part of</h1>
-
-        <FloatingBackButton cta="Home" to="/" />
 
         <Grid.Container
           gap={3}

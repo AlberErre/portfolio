@@ -6,11 +6,13 @@ export type FloatingBackButtonProps = { cta: string; to: string };
 
 export const FloatingBackButton = ({ cta, to }: FloatingBackButtonProps) => {
   return (
-    <Link
-      href={to}
-      style={{ position: "absolute", left: 16, top: 0, color: "black" }}
-    >
-      <a className={styles.navigationLink}>{cta}</a>
+    <Link href={to}>
+      <a
+        style={{ position: "absolute", left: 24, top: 8, color: "black" }}
+        className={styles.navigationLink}
+      >
+        {cta}
+      </a>
     </Link>
   );
 };

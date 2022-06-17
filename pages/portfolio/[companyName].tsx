@@ -6,6 +6,7 @@ import { Card } from "@nextui-org/react";
 import { getCompanyDataByName } from "./utils";
 import { CompanyData, CompanyName } from "./utils/types";
 import { FloatingBackButton } from "../../components/FloatingBackButton";
+import { CompanyInfoCard } from "./components/CompanyInfoCard";
 
 export type PortfolioCompanyProps = {
   name: string;
@@ -19,18 +20,10 @@ const PortfolioCompany: NextPage<PortfolioCompanyProps> = ({ name, data }) => {
         <title>Alberto Ruiz: {name}</title>
       </Head>
 
+      <FloatingBackButton cta="Portfolio" to="/portfolio" />
+
       <main className={styles.main}>
-        <FloatingBackButton cta="Portfolio" to="/portfolio" />
-
-        <Card>
-          <img
-            src={data.image.imgSource}
-            alt={data.image.alt}
-            className={styles.imageLarge}
-          />
-
-          <h1 className={styles.title}>{name}</h1>
-        </Card>
+        <CompanyInfoCard data={data} />
       </main>
     </div>
   );
