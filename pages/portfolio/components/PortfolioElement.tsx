@@ -17,7 +17,7 @@ export const PortfolioElement = ({
   size = "regular",
 }: PortfolioElementProps) => {
   return (
-    <Link href={path} target="_blank">
+    <Link href={path}>
       <Card>
         <Card.Body>
           <img
