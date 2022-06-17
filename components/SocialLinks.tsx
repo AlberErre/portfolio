@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styles from "../styles/Links.module.css";
+import styles from "./SocialLinks.module.css";
 
 export const SocialLinks = () => {
   return (
@@ -8,7 +8,7 @@ export const SocialLinks = () => {
       <ul>
         <li>
           <a href="https://twitter.com/0xErre" target="_blank" rel="noreferrer">
-            <img src="/twitter.png" alt="twitter" height="25" />
+            <img src="/social/twitter.png" alt="twitter" height="25" />
           </a>
         </li>
         <li>
@@ -17,7 +17,7 @@ export const SocialLinks = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/github.png" alt="github" height="25" />
+            <img src="/social/github.png" alt="github" height="25" />
           </a>
         </li>
         <li>
@@ -26,7 +26,7 @@ export const SocialLinks = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/linkedin.png" alt="linkedin" height="25" />
+            <img src="/social/linkedin.png" alt="linkedin" height="25" />
           </a>
         </li>
       </ul>
