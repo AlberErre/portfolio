@@ -2,16 +2,16 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Common.module.css";
 import Script from "next/script";
 import { SocialLinks } from "../components/SocialLinks";
+import Link from "next/link";
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Alberto Ruiz</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script src="/p5/p5.min.js"></Script>
       <Script src="/p5/art.js"></Script>
@@ -21,8 +21,8 @@ const Home: NextPage = () => {
 
         <h1 className={styles.title}>Alberto Ruiz</h1>
 
-        <div className={styles.description}>
-          <p>Hey! 👋🏼 I'm Alber</p>
+        <article className={styles.description}>
+          <h2>Hey! 👋🏼 I'm Alber</h2>
           <p>
             Software engineer specialized in Frontend development (web + mobile)
             who enjoys building scalable applications with strong UX design.
@@ -31,16 +31,11 @@ const Home: NextPage = () => {
           <p>
             I love to work with the <strong>React</strong> ecosystem ⚛️.
           </p>
-        </div>
+        </article>
 
-        <a
-          className={styles.portfolio}
-          href="https://github.com/AlberErre"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Portfolio
-        </a>
+        <Link href="/portfolio">
+          <a className={styles.navigationLink}>Portfolio</a>
+        </Link>
 
         <SocialLinks />
       </main>

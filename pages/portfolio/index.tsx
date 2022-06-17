@@ -2,7 +2,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
-import { Grid } from "@nextui-org/react";
+import { Grid, Link } from "@nextui-org/react";
 import { PortfolioElement } from "./components/PortfolioElement";
 
 const Home: NextPage = () => {
@@ -15,7 +15,11 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Projects I've been part of</h1>
 
-        <Grid.Container gap={3} justify="center" css={{ marginTop: "16px" }}>
+        <Grid.Container
+          gap={3}
+          justify="center"
+          css={{ marginTop: "16px", maxWidth: "1024px" }}
+        >
           <Grid>
             <PortfolioElement
               size="large"
@@ -68,6 +72,13 @@ const Home: NextPage = () => {
             />
           </Grid>
         </Grid.Container>
+
+        <Link
+          href="/"
+          style={{ position: "absolute", left: 16, top: 0, color: "black" }}
+        >
+          <a className={styles.navigationLink}>Home</a>
+        </Link>
       </main>
     </div>
   );
