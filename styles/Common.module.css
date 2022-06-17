@@ -29,19 +29,8 @@
   text-decoration: underline;
 }
 
-.description {
-  margin: 16px 0;
-  padding: 16px 32px;
-  font-size: 14px;
-  line-height: 1.8em;
-  border-radius: 16px;
-  box-shadow:
-    0 7px 30px -10px rgba(150, 170, 180, 0.5);
-}
-
-.description p {
-  text-align: justify;
-  text-justify: inter-word;
-  font-size: 14px;
-  line-height: 1.2rem;
+@media (max-width: 600px) {
+  .navigationLink {
+    font-size: 1.2rem;
+  }
 }

@@ -1,0 +1,32 @@
+.description {
+  width: 450px;
+  margin: 32px 0;
+  padding: 32px 48px;
+  line-height: 1.8em;
+  border-radius: 16px;
+  box-shadow:
+    0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}
+
+.description p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 14px;
+  line-height: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .description {
+    width: 350px;
+    margin: 16px 0;
+    padding: 16px 24px;
+  }
+
+  .description p {
+    font-size: 12px;
+  }
+
+  .description h2 {
+    font-size: 18px;
+  }
+}
