@@ -11,6 +11,7 @@ export enum CompanyName {
 export type CompanyData = {
   name: string;
   description: string;
+  position: string;
   techStack: string[];
   dates: string;
   image: CompanyImageData;

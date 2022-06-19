@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
-import { Card } from "@nextui-org/react";
 import { getCompanyDataByName } from "./utils";
 import { CompanyData, CompanyName } from "./utils/types";
 import { FloatingBackButton } from "../../components/FloatingBackButton";

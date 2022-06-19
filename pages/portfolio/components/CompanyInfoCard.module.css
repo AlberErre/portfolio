@@ -4,16 +4,27 @@
   width: fit-content;
 }
 
-.title {
-  font-size: 1.8rem;
+.mainDescription {
+  font-size: 1.2rem;
+  text-align: justify;
 }
 
-.card p strong {
+.title {
   font-weight: 800;
   text-decoration: underline;
+  margin-bottom: 0;
 }
 
 .card {
   width: 600px !important;
   padding: 32px !important;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card a {
+  margin: 16px 0;
+text-decoration: underline;
 }
