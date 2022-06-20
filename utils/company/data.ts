@@ -6,7 +6,7 @@ export const companies: CompanyData[] = [
     description:
       "BBVA is a spanish bank. They focus on digitalization and have a large team of developers to make both their web and mobile applications.",
     position:
-      "Developed components for the frontend of the mobile application using JavaScript (they use a custom framework created by the bank).",
+      "Developed components for their mobile/web application using JavaScript (they use a custom framework created by the bank).",
     dates: "Jan 2019 - May 2019",
     techStack: ["JavaScript", "Mocha"],
     image: {
