@@ -87,7 +87,7 @@ export const companies: CompanyData[] = [
   {
     name: CompanyName.DAG,
     description:
-      "DAG is a car importer from canary islands (Spain), they core business is importing and selling cars (Volkswagen, Audi, Škoda). They have an internal IT team to develop and mantain internal company applications.",
+      "Domingo Alonso Group (DAG) is a vehicle importer from canary islands (Spain), they core business is importing and selling cars (Volkswagen, Audi, Škoda). They have an internal IT team to develop and mantain internal company applications.",
     position:
       "Developed a frontend application to handle and show documentation from Google Drive using React (Gatsby framework). As well as improve and maintain the company's internal Design System and Components Library (Vue v2/v3).",
     dates: "Dec 2021 - May 2022",
