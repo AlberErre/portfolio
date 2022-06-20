@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card, Link } from "@nextui-org/react";
 import React from "react";
+import { CustomCard } from "../Common/CustomCard";
 import styles from "./PortfolioElement.module.css";
 
 export type PortfolioElementProps = {
@@ -18,7 +19,7 @@ export const PortfolioElement = ({
 }: PortfolioElementProps) => {
   return (
     <Link href={path}>
-      <Card>
+      <CustomCard>
         <Card.Body>
           <img
             src={imgSource}
@@ -26,7 +27,7 @@ export const PortfolioElement = ({
             className={size === "large" ? styles.imageLarge : styles.image}
           />
         </Card.Body>
-      </Card>
+      </CustomCard>
     </Link>
   );
 };

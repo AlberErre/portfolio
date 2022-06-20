@@ -7,10 +7,12 @@
 .mainDescription {
   font-size: 1.2rem;
   text-align: justify;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 .hiddenTitle {
-  visibility: hidden;
+  display: none;
 }
 
 .title {
@@ -19,27 +21,7 @@
   margin-bottom: 0;
 }
 
-.card {
-  width: 600px !important;
-  padding: 32px !important;
-}
-
-.card p {
-  text-align: justify;
-}
-
-.card a {
-  font-size: 1.2rem;
-  margin: 16px 0;
-  text-decoration: underline;
-}
-
 @media (max-width: 600px) {
-  .card {
-    width: 350px !important;
-    padding: 8px !important;
-  }
-
   .image {
     padding: 8px;
     height: 60px;
@@ -50,14 +32,6 @@
   }
 
   .title {
-    font-size: 1rem;
-  }
-
-  .card p {
-    font-size: 0.8rem;
-  }
-
-  .card a {
     font-size: 1rem;
   }
 }
