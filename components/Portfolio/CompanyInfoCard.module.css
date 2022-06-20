@@ -1,3 +1,22 @@
+.card {
+  width: 600px !important;
+  padding: 32px !important;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.card img {
+  height: 60px;
+}
+
+.card a {
+  font-size: 1.2rem;
+  margin: 16px 0;
+  text-decoration: underline;
+}
+
 .image {
   padding: 14px;
   height: 80px;
@@ -22,6 +41,19 @@
 }
 
 @media (max-width: 600px) {
+  .card {
+    width: 350px !important;
+    padding: 8px !important;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .card a {
+    font-size: 1rem;
+  }
+
   .image {
     padding: 8px;
     height: 60px;

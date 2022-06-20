@@ -17,7 +17,7 @@ export const CompanyInfoCard = ({
   const techTags = techStack.map((tech) => <Tag key={tech}>{tech}</Tag>);
 
   return (
-    <CustomCard as="article">
+    <CustomCard as="article" className={styles.card}>
       <Card.Header>
         <Card.Image
           src={image.imgSource}
