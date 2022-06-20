@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Common.module.css";
-import { SocialLinks } from "../components/SocialLinks";
+import { SocialLinks } from "../components/Home/SocialLinks";
 import Link from "next/link";
-import { Hello } from "../components/Hello";
-import { Art } from "../components/Art";
+import { Hello } from "../components/Home/Hello";
+import { Art } from "../components/Home/Art";
 
 const Home: NextPage = () => {
   return (

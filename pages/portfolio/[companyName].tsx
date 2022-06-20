@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
-import { getCompanyDataByName } from "./utils";
-import { CompanyData, CompanyName } from "./utils/types";
-import { FloatingBackButton } from "../../components/FloatingBackButton";
-import { CompanyInfoCard } from "./components/CompanyInfoCard";
+import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
+import { CompanyInfoCard } from "../../components/Portfolio/CompanyInfoCard";
+import { CompanyData, CompanyName } from "../../utils/company/types";
+import { getCompanyDataByName } from "../../utils/company";
 
 export type PortfolioCompanyProps = {
   name: string;

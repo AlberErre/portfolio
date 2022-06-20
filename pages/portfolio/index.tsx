@@ -3,8 +3,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
 import { Grid } from "@nextui-org/react";
-import { PortfolioElement } from "./components/PortfolioElement";
-import { FloatingBackButton } from "../../components/FloatingBackButton";
+import { PortfolioElement } from "../../components/Portfolio/PortfolioElement";
+import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
 
 const Home: NextPage = () => {
   return (

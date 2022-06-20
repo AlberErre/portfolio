@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { Card } from "@nextui-org/react";
 import React from "react";
-import { CompanyData } from "../utils/types";
 import styles from "./CompanyInfoCard.module.css";
-import { Tag } from "../../../components/Tag";
 import tagStyles from "../../../components/Tag.module.css";
+import { Tag } from "../Common/Tag";
+import { CompanyData } from "../../utils/company/types";
 
 export type CompanyInfoCardProps = {
   data: CompanyData;
