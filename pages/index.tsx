@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <Art />
 
-        <h1 className={styles.title}>Alberto Ruiz</h1>
+        <h1 className={styles.hiddenTitle}>Alberto Ruiz</h1>
 
         <Hello />
 

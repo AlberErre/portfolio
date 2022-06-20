@@ -22,6 +22,10 @@
   margin-top: 16px;
 }
 
+.hiddenTitle {
+  display: none;
+}
+
 .navigationLink {
   margin: 16px 0;
   line-height: 1.15;

@@ -4,6 +4,8 @@ import { CustomCard } from "../Common/CustomCard";
 import React from "react";
 import styles from "./CompanyInfoCard.module.css";
 import tagStyles from "../Common/Tag.module.css";
+import commonStyles from "../../styles/Common.module.css";
+
 import { Tag } from "../Common/Tag";
 import { CompanyData } from "../../utils/company/types";
 
@@ -24,7 +26,7 @@ export const CompanyInfoCard = ({
           alt={image.alt}
           className={styles.image}
         />
-        <h1 className={styles.hiddenTitle}>{name}</h1>
+        <h1 className={commonStyles.hiddenTitle}>{name}</h1>
       </Card.Header>
 
       <Card.Body>

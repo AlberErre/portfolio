@@ -27,7 +27,7 @@ export const Art = () => {
       <Script src="/p5/p5.min.js"></Script>
       <Script src="/p5/art.js"></Script>
 
-      <div id="canvasHolder" />
+      <div id="canvasHolder" style={{ height: "230px" }} />
     </>
   );
 };

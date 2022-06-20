@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../../styles/Common.module.css";
+import commonStyles from "../../styles/Common.module.css";
 import { Grid } from "@nextui-org/react";
 import { PortfolioElement } from "../../components/Portfolio/PortfolioElement";
 import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
@@ -15,8 +15,8 @@ const Home: NextPage = () => {
 
       <FloatingBackButton cta="Home" to="/" />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Projects I've been part of</h1>
+      <main className={commonStyles.main}>
+        <h1 className={commonStyles.title}>Projects I've been part of</h1>
 
         <Grid.Container
           gap={3}
@@ -65,7 +65,6 @@ const Home: NextPage = () => {
               path="/portfolio/trive"
               imgSource="/companies/trive.png"
               imgAlt="trive"
-              size="large"
             />
           </Grid>
           <Grid>
