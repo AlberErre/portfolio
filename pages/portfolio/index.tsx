@@ -2,7 +2,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
-import { Grid, Link } from "@nextui-org/react";
+import { Grid } from "@nextui-org/react";
 import { PortfolioElement } from "./components/PortfolioElement";
 import { FloatingBackButton } from "../../components/FloatingBackButton";
 
@@ -65,6 +65,7 @@ const Home: NextPage = () => {
               path="/portfolio/trive"
               imgSource="/companies/trive.png"
               imgAlt="trive"
+              size="large"
             />
           </Grid>
           <Grid>

@@ -10,7 +10,10 @@ export const Hello = () => {
         Software engineer specialized in <strong>Frontend</strong> who enjoys
         building scalable applications with strong UX design (web + mobile).
       </p>
-      <p>I'm also very interested on Rust programming 🦀.</p>
+      <p>
+        I'm also very interested on Rust programming 🦀, as well as{" "}
+        <strong>web3</strong>.
+      </p>
       <p>
         I love to work with the <strong>React</strong> ecosystem ⚛️.
       </p>
