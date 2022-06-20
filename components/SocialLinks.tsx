@@ -22,7 +22,7 @@ export const SocialLinks = () => {
         </li>
         <li>
           <a
-            href="https://github.com/AlberErre"
+            href="https://www.linkedin.com/in/albererre/"
             target="_blank"
             rel="noreferrer"
           >
