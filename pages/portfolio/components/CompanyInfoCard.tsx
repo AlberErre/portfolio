@@ -16,16 +16,18 @@ export const CompanyInfoCard = ({
   const techTags = techStack.map((tech) => <Tag key={tech}>{tech}</Tag>);
 
   return (
-    <Card className={styles.card}>
-      <Card.Body>
+    <Card as="article" className={styles.card}>
+      <Card.Header>
         <img src={image.imgSource} alt={image.alt} className={styles.image} />
-
+        <h1 className={styles.hiddenTitle}>{name}</h1>
+      </Card.Header>
+      <Card.Body>
         <p className={styles.mainDescription}>{description}</p>
 
         <p className={styles.title}>Position</p>
         <p>{position}</p>
 
-        <p className={styles.title}>Tech stack</p>
+        <p className={styles.title}>Technologies</p>
         <div className={tagStyles.container}>{techTags}</div>
 
         <p className={styles.title}>Dates</p>
