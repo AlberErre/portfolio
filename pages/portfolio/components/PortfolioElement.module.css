@@ -7,3 +7,15 @@
   padding: 16px;
   height: 80px;
 }
+
+@media (max-width: 600px) {
+  .imageLarge {
+    padding: 8px;
+    height: 50px;
+  }
+
+  .image {
+    padding: 8px;
+    height: 32px;
+  }
+}

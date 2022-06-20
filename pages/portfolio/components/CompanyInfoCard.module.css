@@ -9,9 +9,13 @@
   text-align: justify;
 }
 
+.hiddenTitle {
+  visibility: hidden;
+}
+
 .title {
+  font-size: 1.2rem;
   font-weight: 800;
-  text-decoration: underline;
   margin-bottom: 0;
 }
 
@@ -25,6 +29,35 @@
 }
 
 .card a {
+  font-size: 1.2rem;
   margin: 16px 0;
-text-decoration: underline;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 350px !important;
+    padding: 8px !important;
+  }
+
+  .image {
+    padding: 8px;
+    height: 60px;
+  }
+
+  .mainDescription {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+  .card a {
+    font-size: 0.8rem;
+  }
 }

@@ -20,3 +20,10 @@
 .container p:last-child {
   margin-right: 0 !important;
 }
+
+@media (max-width: 600px) {
+  .tag {
+    line-height: 0.8em;
+    font-size: 0.8rem;
+  }
+}
