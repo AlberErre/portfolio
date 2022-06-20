@@ -2,7 +2,7 @@
 import { Card } from "@nextui-org/react";
 import React from "react";
 import styles from "./CompanyInfoCard.module.css";
-import tagStyles from "../../../components/Tag.module.css";
+import tagStyles from "../Common/Tag.module.css";
 import { Tag } from "../Common/Tag";
 import { CompanyData } from "../../utils/company/types";
 
