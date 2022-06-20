@@ -1,12 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "./Hello.module.css";
+import "animate.css";
 
 export const Hello = () => {
+  const classes = [styles.description, "animate__bounceIn"].join(" ");
+
   return (
-    <article className={styles.description}>
+    <article className={classes}>
       <h2>Hey! 👋🏼 I'm Alber</h2>
-      <p>
+      <p className="animate__backInUp">
         Software engineer specialized in <strong>Frontend</strong> who enjoys
         building scalable applications with strong UX design (web + mobile).
       </p>

@@ -5,9 +5,9 @@ import React from "react";
 import styles from "./CompanyInfoCard.module.css";
 import tagStyles from "../Common/Tag.module.css";
 import commonStyles from "../../styles/Common.module.css";
-
 import { Tag } from "../Common/Tag";
 import { CompanyData } from "../../utils/company/types";
+import "animate.css";
 
 export type CompanyInfoCardProps = {
   data: CompanyData;
@@ -16,10 +16,12 @@ export type CompanyInfoCardProps = {
 export const CompanyInfoCard = ({
   data: { name, image, description, dates, techStack, link, position },
 }: CompanyInfoCardProps) => {
+  const classes = [styles.card, "animate__bounceIn"].join(" ");
+
   const techTags = techStack.map((tech) => <Tag key={tech}>{tech}</Tag>);
 
   return (
-    <CustomCard as="article" className={styles.card}>
+    <CustomCard as="article" className={classes}>
       <Card.Header>
         <Card.Image
           src={image.imgSource}

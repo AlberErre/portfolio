@@ -4,8 +4,11 @@ import Head from "next/head";
 import commonStyles from "../../styles/Common.module.css";
 import { PortfolioElement } from "../../components/Portfolio/PortfolioElement";
 import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
+import "animate.css";
 
 const Home: NextPage = () => {
+  const containerClasses = [commonStyles.main, "animate__bounceIn"].join(" ");
+
   return (
     <div>
       <Head>
@@ -14,7 +17,7 @@ const Home: NextPage = () => {
 
       <FloatingBackButton cta="Home" to="/" />
 
-      <main className={commonStyles.main}>
+      <main className={containerClasses}>
         <h1 className={commonStyles.title}>Projects I've been part of</h1>
 
         <div className={commonStyles.wrapContainer}>
