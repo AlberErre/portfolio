@@ -4,6 +4,15 @@
   margin: auto;
 }
 
+.wrapContainer {
+  max-width: 800px;
+  margin: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;

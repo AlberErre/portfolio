@@ -19,7 +19,7 @@ export const PortfolioElement = ({
 }: PortfolioElementProps) => {
   return (
     <Link href={path}>
-      <CustomCard>
+      <CustomCard className={styles.element}>
         <Card.Body>
           <img
             src={imgSource}
