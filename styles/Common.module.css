@@ -50,4 +50,8 @@
   .title {
     font-size: 1.5rem;
   }
+
+  .wrapContainer {
+    margin: 16px;
+  }
 }

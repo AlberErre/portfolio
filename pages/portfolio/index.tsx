@@ -17,7 +17,10 @@ const Home: NextPage = () => {
 
       <FloatingBackButton cta="Home" to="/" />
 
-      <main className={containerClasses}>
+      <main
+        className={containerClasses}
+        style={{ justifyContent: "flex-start", paddingBottom: 0 }}
+      >
         <h1 className={commonStyles.title}>Projects I've been part of</h1>
 
         <div className={commonStyles.wrapContainer}>
