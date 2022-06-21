@@ -1,7 +1,6 @@
 .card {
   width: 600px !important;
   padding: 32px !important;
-  animation-duration: calc(var(--animate-duration) * 0.75);
 }
 
 .card p {
