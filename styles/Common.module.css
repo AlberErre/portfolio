@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-duration: calc(var(--animate-duration) * 0.75);
 }
 
 .title {
@@ -43,6 +44,11 @@
 }
 
 @media (max-width: 600px) {
+  .main {
+    justify-content: flex-start;
+    padding-bottom: 0;
+  }
+
   .navigationLink {
     font-size: 1.2rem;
   }

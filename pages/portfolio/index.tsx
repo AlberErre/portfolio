@@ -7,20 +7,17 @@ import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
 import "animate.css";
 
 const Home: NextPage = () => {
-  const containerClasses = [commonStyles.main, "animate__bounceIn"].join(" ");
+  const containerClasses = [commonStyles.main, "animate__fadeIn"].join(" ");
 
   return (
     <div>
       <Head>
-        <title>Alberto Ruiz: Portfolio</title>
+        <title>Alberto Ruiz: portfolio</title>
       </Head>
 
       <FloatingBackButton cta="Home" to="/" />
 
-      <main
-        className={containerClasses}
-        style={{ justifyContent: "flex-start", paddingBottom: 0 }}
-      >
+      <main className={containerClasses}>
         <h1 className={commonStyles.title}>Projects I've been part of</h1>
 
         <div className={commonStyles.wrapContainer}>

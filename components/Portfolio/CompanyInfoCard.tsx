@@ -16,7 +16,7 @@ export type CompanyInfoCardProps = {
 export const CompanyInfoCard = ({
   data: { name, image, description, dates, techStack, link, position },
 }: CompanyInfoCardProps) => {
-  const classes = [styles.card, "animate__bounceIn"].join(" ");
+  const classes = [styles.card, "animate__fadeIn"].join(" ");
 
   const techTags = techStack.map((tech) => <Tag key={tech}>{tech}</Tag>);
 
