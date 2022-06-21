@@ -1,6 +1,8 @@
 .card {
   width: 600px !important;
   padding: 32px !important;
+  margin: 8px !important;
+  margin-bottom: 32px !important;
 }
 
 .card p {
@@ -40,6 +42,7 @@
   .card {
     width: 350px !important;
     padding: 8px !important;
+
   }
 
   .card p {
