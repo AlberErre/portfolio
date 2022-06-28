@@ -22,6 +22,15 @@ export const SocialLinks = () => {
         </li>
         <li>
           <a
+            href="mailto:alber.contract@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/social/mail.png" alt="email" height="25" />
+          </a>
+        </li>
+        <li>
+          <a
             href="https://www.linkedin.com/in/albererre/"
             target="_blank"
             rel="noreferrer"
