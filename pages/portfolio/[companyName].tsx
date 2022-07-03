@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../../styles/Common.module.css";
 import { FloatingBackButton } from "../../components/Common/FloatingBackButton";
-import { CompanyInfoCard } from "../../components/Portfolio/CompanyInfoCard";
+import { InfoCard } from "../../components/Portfolio/InfoCard";
 import { CompanyData, CompanyName } from "../../utils/company/types";
 import { getCompanyDataByName } from "../../utils/company";
 
@@ -21,7 +21,7 @@ const PortfolioCompany: NextPage<PortfolioCompanyProps> = ({ name, data }) => {
       <FloatingBackButton cta="Portfolio" to="/portfolio" />
 
       <main className={styles.main}>
-        <CompanyInfoCard data={data} />
+        <InfoCard data={data} />
       </main>
     </div>
   );
