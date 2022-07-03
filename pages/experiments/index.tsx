@@ -24,12 +24,18 @@ const Home: NextPage = () => {
 
         <div className={commonStyles.wrapContainer}>
           <ExperimentElement
-            size="large"
             href="https://nft-nickname.vercel.app/"
             imgSource="/experiments/nft-nickname.png"
             imgAlt="Nft Nickname"
             cta="NFT Nickname"
             description="Web3 Solana app - add nicknames to your Solana NFTs"
+          />
+          <ExperimentElement
+            href="https://62c1bbca9b23fa279ae00d21--melodic-yeot-a23224.netlify.app/"
+            imgSource="/experiments/ether-marriage.png"
+            imgAlt="Ether Marriage"
+            cta="Ether Marriage"
+            description="Web3 Ethereum app - Register your love on Ethereum"
           />
         </div>
       </main>

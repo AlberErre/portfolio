@@ -15,21 +15,12 @@
 }
 
 .image {
-  padding: 14px;
-  height: 56px;
-}
-
-.imageLarge {
-  padding: 16px;
-  height: 80px;
+  margin: auto;
+  padding: 8px;
+  width: 120px;
 }
 
 @media (max-width: 600px) {
-  .imageLarge {
-    padding: 8px;
-    height: 48px;
-  }
-
   .image {
     padding: 8px;
     height: 32px;
