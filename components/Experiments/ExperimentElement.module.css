@@ -1,5 +1,17 @@
 .element {
   margin: 12px !important;
+  max-width: 300px;
+}
+
+.element h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.element p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 16px 0 16px;
 }
 
 .image {
