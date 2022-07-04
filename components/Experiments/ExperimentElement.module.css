@@ -17,12 +17,5 @@
 .image {
   margin: auto;
   padding: 8px;
-  width: 120px;
-}
-
-@media (max-width: 600px) {
-  .image {
-    padding: 8px;
-    height: 32px;
-  }
+  height: 100px;
 }
