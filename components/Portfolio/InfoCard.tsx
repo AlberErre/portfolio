@@ -2,20 +2,20 @@
 import { Card } from "@nextui-org/react";
 import { CustomCard } from "../Common/CustomCard";
 import React from "react";
-import styles from "./CompanyInfoCard.module.css";
+import styles from "./InfoCard.module.css";
 import tagStyles from "../Common/Tag.module.css";
 import commonStyles from "../../styles/Common.module.css";
 import { Tag } from "../Common/Tag";
 import { CompanyData } from "../../utils/company/types";
 import "animate.css";
 
-export type CompanyInfoCardProps = {
+export type InfoCardProps = {
   data: CompanyData;
 };
 
-export const CompanyInfoCard = ({
+export const InfoCard = ({
   data: { name, image, description, dates, techStack, link, position },
-}: CompanyInfoCardProps) => {
+}: InfoCardProps) => {
   const classes = [styles.card, "animate__bounceIn"].join(" ");
 
   const techTags = techStack.map((tech) => <Tag key={tech}>{tech}</Tag>);

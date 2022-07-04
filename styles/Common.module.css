@@ -43,6 +43,10 @@
   text-decoration: underline;
 }
 
+.links a {
+  margin: 16px;
+}
+
 @media (max-width: 600px) {
   .container {
     width: 350px;

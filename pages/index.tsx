@@ -23,10 +23,14 @@ const Home: NextPage = () => {
 
         <Hello />
 
-        <Link href="/portfolio">
-          <a className={styles.navigationLink}>Portfolio</a>
-        </Link>
-
+        <div className={styles.links}>
+          <Link href="/portfolio">
+            <a className={styles.navigationLink}>Portfolio</a>
+          </Link>
+          <Link href="/experiments">
+            <a className={styles.navigationLink}>Experiments</a>
+          </Link>
+        </div>
         <SocialLinks />
       </main>
     </div>
