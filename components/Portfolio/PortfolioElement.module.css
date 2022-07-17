@@ -1,5 +1,6 @@
 .element {
   margin: 12px !important;
+  width: auto !important;
 }
 
 .image {

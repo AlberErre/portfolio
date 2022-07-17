@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
         <Hello />
 
-        <Link href="/portfolio">
+        <Link href="/portfolio" as={`/portfolio`}>
           <a className={styles.navigationLink}>Portfolio</a>
         </Link>
 
