@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import type { NextPage } from "next";
 import Head from "next/head";
 import styles from "../styles/Common.module.css";
 import { SocialLinks } from "../components/Home/SocialLinks";
-import Link from "next/link";
 import { Hello } from "../components/Home/Hello";
 import { Art } from "../components/Home/Art";
 import "animate.css";
@@ -23,9 +23,9 @@ const Home: NextPage = () => {
 
         <Hello />
 
-        <Link href="/portfolio" as={`/portfolio`}>
-          <a className={styles.navigationLink}>Portfolio</a>
-        </Link>
+        <a href="/portfolio" className={styles.navigationLink}>
+          Portfolio
+        </a>
 
         <SocialLinks />
       </main>
