@@ -68,4 +68,10 @@
   .wrapContainer {
     margin: 16px;
   }
+
+  .links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
