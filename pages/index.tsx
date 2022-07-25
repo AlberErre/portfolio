@@ -28,7 +28,7 @@ const Home: NextPage = () => {
             <a className={styles.navigationLink}>Portfolio</a>
           </Link>
           <Link href="/experiments">
-            <a className={styles.navigationLink}>Experiments</a>
+            <a className={styles.navigationLink}>Experiments (web3)</a>
           </Link>
         </div>
         <SocialLinks />
